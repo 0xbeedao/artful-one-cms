@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_web3_contracts",
+  "info": {
+    "displayName": "Contract",
+    "icon": "check-double"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "chain": {
+      "type": "integer"
+    }
+  }
+}

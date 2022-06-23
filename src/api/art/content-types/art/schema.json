@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arts",
+  "info": {
+    "singularName": "art",
+    "pluralName": "arts",
+    "displayName": "Art"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "string"
+    },
+    "media": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deployment": {
+      "displayName": "deployment",
+      "type": "component",
+      "repeatable": true,
+      "component": "web3.deployment"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "gallery": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::gallery.gallery",
+      "inversedBy": "arts"
+    }
+  }
+}

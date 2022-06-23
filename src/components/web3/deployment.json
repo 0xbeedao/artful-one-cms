@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_web3_deployments",
+  "info": {
+    "displayName": "deployment",
+    "icon": "upload",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tokenId": {
+      "type": "integer"
+    },
+    "contract": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contract.contract"
+    }
+  }
+}
